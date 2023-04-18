@@ -1,0 +1,68 @@
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+main{
+    flex-grow: 1;
+}
+img{
+    max-width: 80%;
+}
+h2{
+    font-size: 5vh;
+}
+
+button:hover{
+    border: 5px solid rgb(15, 207, 255);
+}
+button:active{
+    border: 5px solid rgb(8, 0, 124);
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.glow2 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #020072, 0 0 40px #020072 0 0 50px #020072, 0 0 60px #020072, 0 0 70px #020072;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #1713ff, 0 0 40px #1713ff, 0 0 50px #1713ff, 0 0 60px #1713ff, 0 0 70px #1713ff, 0 0 80px #1713ff;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .glow {
+        font-size: 40px;
+    }
+    .glow2 {
+        font-size: 20px;
+    }
+}
